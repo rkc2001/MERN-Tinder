@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Header from './components/Header';
+import TinderCards from './components/TinderCards';
+import SwipeButtons from './components/SwipeButtons';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    //BEM class-naming convention
+    <div className="app">
+      {/* Header */}
+      <Header />
+      {/* Tinder Cards */}
+      <TinderCards />
+      {/* Swipe Buttons */}
+      <SwipeButtons />
+
     </div>
   );
 }
 
 export default App;
+
+/* 3 sections of the app - header , tinder card and swipe button section */
+
+/* https://tinder-clone-cdffb.web.app/ */
